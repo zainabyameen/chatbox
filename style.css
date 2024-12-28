@@ -1,0 +1,310 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+
+
+}
+
+.inMain {
+    width: 300px;
+    height: 100vh;
+}
+
+.megphndiv {
+    display: flex; 
+    align-items: center;
+    color: gray;
+    gap: 30px;
+    padding-top: 30px;
+
+    
+
+}
+
+.num {
+    background-color: #725de9;
+    color: white;
+    width: 150px;
+    padding:6px 8px;
+    border-radius: 16px;
+    border: none;
+    margin: 10px;
+}
+
+.chatbox {
+    width: 78%;
+
+}
+
+.profile {
+    width: 32%;
+
+
+}
+
+.search {
+    width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    margin: 6px;
+    color: lightslategray;
+}
+
+.sheduled,
+.broadcast,
+.all {
+    width: 80px;
+    border-radius: 15px;
+    border: none;
+    padding: 6px;
+    margin: 5px;
+    background-color: #725de9;
+    color: white;
+
+}
+
+.mi {
+    width: 40px;
+    border-radius: 19px;
+    padding: 7px;
+    margin: 10px;
+    border: none;
+    background-color: #725de9;
+    color: white;
+}
+
+.time {
+    width: 30px;
+    border-radius: 19px;
+    padding: 6px;
+    border: none;
+    background-color: #725de9;
+    color: white;
+}
+
+.heading {
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+     padding: 16px 16px;  
+     gap: 8px;
+    
+
+}
+
+
+.allChats {
+    width: 100%;
+    padding: 6px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.chat {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    box-shadow: -1px -1px 8px grey;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+
+.icon {
+    background-color: #725de9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.desc {
+    color: #725de9;
+    padding: 6px 8px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+.desc h1 {
+    font-size: 16px;
+    text-align: start;
+    color: black;
+}
+
+.desc p {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+    height: 18px;
+    color: black;
+}
+
+.notification {
+    background-color: #725de9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    padding: 6px;
+    color: #ffffff;
+}
+
+.heading {
+    font-size: 14px;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.msg {
+    border-radius: 16px;
+    background-color: lightgrey;
+    font-size: 14px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.allmsg {
+    width: 100%;
+    overflow-y: scroll;
+    height: 70%;
+    padding: 10px 16px;
+}
+
+.allmsg::-webkit-scrollbar {
+    display: none;
+
+}
+
+.msgsDiv {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+}
+
+.msgsDiv.user1 {
+    justify-content: flex-start;
+}
+
+.msgsDiv.user2 {
+    justify-content: flex-end;
+}
+
+.msg {
+    border-radius: 16px;
+    font-size: 14px;
+    padding: 6px 12px;
+    width: 260px;
+}
+
+.user1 .msg {
+    background-color: #725de9;
+    color: #fff;
+}
+
+.user2 .msg {
+    background-color: rgb(198, 198, 198);
+    color: #000;
+}
+
+.msgInputDiv {
+    width: 100%;
+    /* height: 15%; */
+    display: flex;
+    align-items: center;
+
+}
+
+.msgInputDiv textarea {
+    width: 100%;
+    border: none;
+    padding: 10px 6px 2px 12px;
+    border-radius: 10px;
+    background-color: lightgray;
+    color: #000;
+    display: flex;
+    align-items: center;
+    resize: none;
+}
+
+.msgInputItems {
+    display: flex;
+    padding: 16px;
+}
+
+.msgInputItems i {
+    padding: 4px;
+}
+
+.setting {
+    background-color: #725de9;
+    color: white;
+    font-size: 16px;
+    padding: 50px;
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.name {
+    font-size: 18px;
+    padding: 26px;
+}
+
+.sets {
+    font-size: 17px;
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.582);
+}
+
+.icons i {
+    color: #725de9;
+    margin-right: 2px;
+}
